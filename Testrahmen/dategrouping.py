@@ -28,7 +28,7 @@ p1.legend(['Negative', 'Neutral', 'Positive'], facecolor='white', framealpha=1, 
 plt.setp(p1.get_xticklabels(), fontsize=12)
 plt.setp(p1.get_yticklabels(), fontsize=12);
 
-# plt.show()
+plt.show()
 
 
 

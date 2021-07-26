@@ -29,9 +29,9 @@ p1.set_xlabel('Date', fontsize=12)
 p1.set_ylabel('Sentiment (%)', fontsize=12, labelpad=10)
 plt.setp(p1.get_xticklabels(), fontsize=12)
 plt.setp(p1.get_yticklabels(), fontsize=12)
-p1.legend(['Negative', 'Neutral', 'Positive'], facecolor='white', framealpha=1, fontsize=25)
+p1.legend(['Negative', 'Neutral', 'Positive'], facecolor='white', framealpha=1, fontsize=12)
 
-# p1.show()
+plt.show()
 
 # Create dataframes for positive, neutral and negative sentiment
 positive_df = df[df['svaluenltk'] == 'positive']
@@ -41,4 +41,35 @@ negative_df = df[df['svaluenltk'] == 'negative']
 positive_df.shape, neutral_df.shape, negative_df.shape
 
 df['svaluenltk'].value_counts()
+
+#Negative sentiments per day in bar chart
+p2 = negative_df['dates'].value_counts().plot(kind='bar', figsize=(10,6), alpha = .70, fontsize=12)
+
+p2.set_title('Num of Negative Tweets per day', fontsize=12, pad=10)
+p2.set_xlabel('Date', fontsize=12, labelpad=10)
+p2.set_ylabel('Sentiment', fontsize=12, labelpad=10)
+
+plt.show()
+
+#Negative sentiments per day in bar chart
+p2 = positive_df['dates'].value_counts().plot(kind='bar', figsize=(10,6), alpha = .70, fontsize=12)
+
+p2.set_title('Num of Positive Tweets per day', fontsize=12, pad=10)
+p2.set_xlabel('Date', fontsize=12, labelpad=10)
+p2.set_ylabel('Sentiment', fontsize=12, labelpad=10)
+
+plt.show()
+
+#Negative sentiments per day in bar chart
+p2 = neutral_df['dates'].value_counts().plot(kind='bar', figsize=(10,6), alpha = .70, fontsize=12)
+
+p2.set_title('Num of Neutral Tweets per day', fontsize=12, pad=10)
+p2.set_xlabel('Date', fontsize=12, labelpad=10)
+p2.set_ylabel('Sentiment', fontsize=12, labelpad=10)
+
+plt.show()
+
+negative_df['dates'].value_counts()
+neutral_df['dates'].value_counts()
+positive_df['dates'].value_counts()
 

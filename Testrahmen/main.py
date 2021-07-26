@@ -7,6 +7,7 @@ import sentimentpie
 import wordcloudcreate
 import commonwords
 import dategrouping
+import toptweets
 
 tweetlength
 datetimetransform
@@ -14,3 +15,4 @@ sentimentpie
 wordcloudcreate
 commonwords
 dategrouping
+toptweets

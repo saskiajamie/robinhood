@@ -25,6 +25,9 @@ sp = pd.DataFrame(sentiments_using_SIA.value_counts())
 label = 'Positive Words','Negative Words'
 color = ['green', 'red']
 
+print (sp)
+
+
 plt.pie(sp, explode=None, labels=label, autopct='%1.1f%%', colors=color)
 
 #draw center circle hole
