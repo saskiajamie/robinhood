@@ -3,7 +3,7 @@
 import pandas as pd
 
 #Open file
-df = pd.read_csv ('./0_results_robinhood.csv', index_col=None, header=0)
+df = pd.read_csv ('Testrahmen/0_results_robinhood.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 df.shape
@@ -19,10 +19,9 @@ df.drop(columns='date',inplace=True)
 reviews = df['time'].str.split('+',n=2,expand=True)
 reviews.head()
 
-df['times']=reviews[0]
-df.drop(columns='1', inplace=True)
-
-reviews = df['date'].str.split('T',n=2,expand=True)
+df['time']=reviews[0]
 reviews.head()
 
-df.to_csv('./cleaneddate.csv')
+
+
+df.to_csv('Testrahmen/cleaneddate.csv')

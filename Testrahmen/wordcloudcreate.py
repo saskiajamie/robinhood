@@ -4,7 +4,7 @@ plt.style.use('fivethirtyeight')
 from wordcloud import WordCloud, STOPWORDS, ImageColorGenerator
 
 #Open file
-df = pd.read_csv ('./0_results_robinhood.csv', index_col=None, header=0)
+df = pd.read_csv ('Testrahmen/cleaneddate.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 

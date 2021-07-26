@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
 #Open file
-df = pd.read_csv ('./0_results_robinhood.csv', index_col=None, header=0)
+df = pd.read_csv ('Testrahmen/cleaneddate.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 
@@ -22,10 +22,10 @@ sentiments_using_SIA = df.cleantext.apply(lambda text: fetch_sentiment_using_SIA
 sp = pd.DataFrame(sentiments_using_SIA.value_counts())
 
 #Visualizing the results
-#label = 'Positive Words','Negative Words'
-# color = ['green', 'red']
+label = 'Positive Words','Negative Words'
+color = ['green', 'red']
 
-# plt.pie(sp, explode=None, labels=label, autopct='%1.1f%%', colors=color)
+plt.pie(sp, explode=None, labels=label, autopct='%1.1f%%', colors=color)
 
 #draw center circle hole
 cc = plt.Circle((0,0),0.75,fc='white')
