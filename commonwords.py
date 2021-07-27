@@ -10,11 +10,12 @@ df = pd.read_csv ('./cleaneddate.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 
+# Problem: stopwords such in wordcloud should be excluded (robinhood, robinhoodapp and hood) !!
+
 #Analysis
 x = []
 for txt in df.iterrows():
     x += txt[1]['cleantext'].split(' ')
-
 #Top Common Words
 topwords = Counter(x).most_common()
 topwords[:5]
