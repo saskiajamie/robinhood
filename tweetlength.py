@@ -1,6 +1,6 @@
 import pandas as pd
 import matplotlib.pyplot as plt
-plt.style.use('fivethirtyeight')
+plt.style.use('ggplot')
 
 # Boxplot Tweet length
 

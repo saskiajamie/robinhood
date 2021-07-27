@@ -7,6 +7,8 @@ import wordcloudcreate
 import commonwords
 import dategrouping
 import toptweets
+import wordevaluation
+import sentiments
 
 tweetlength
 datetimetransform
@@ -14,3 +16,5 @@ wordcloudcreate
 commonwords
 dategrouping
 toptweets
+wordevaluation
+sentiments
