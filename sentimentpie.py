@@ -1,8 +1,6 @@
 import pandas as pd
 import nltk
 from nltk.sentiment.vader import SentimentIntensityAnalyzer
-import warnings
-warnings.filterwarnings("ignore")
 import matplotlib.pyplot as plt
 plt.style.use('fivethirtyeight')
 
