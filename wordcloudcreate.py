@@ -13,7 +13,7 @@ text = " ".join(twt for twt in df.cleantext)
 print ("There are {} words in the cleaned tweets dataset.".format(len(text)))
 
 #WordCloud
-wordcloud = WordCloud(width=1200, height=800, random_state=22, max_font_size=150, relative_scaling=0.5, color_func=lambda *args, **kwargs: "white", colormap='Dark2').generate(text)
+wordcloud = WordCloud(stopwords=('Robinhood','Robinhoodapp','hood'), width=1200, height=800, random_state=22, max_font_size=150, relative_scaling=0.5, color_func=lambda *args, **kwargs: "white", colormap='Dark2').generate(text)
 
 #Display the generated image:
 plt.figure(figsize = (10, 10))

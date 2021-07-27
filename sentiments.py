@@ -13,9 +13,10 @@ print(svalue_num)
 
 labels = 'Negative','Neutral','Positive'
 sizes = [4075,4597,6328]
+explode = (0, 0, 0.1)
 
 fig1, ax1 = plt.subplots()
-ax1.pie(sizes, labels=labels, autopct='%1.1f%%',
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=False, startangle=90)
 ax1.axis('equal')  # Equal aspect ratio ensures that pie is drawn as a circle.
 
