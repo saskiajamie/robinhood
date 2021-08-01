@@ -9,6 +9,7 @@ import dategrouping
 import toptweets
 import wordevaluation
 import sentiments
+import dailytweets
 
 tweetlength
 datetimetransform
@@ -18,3 +19,4 @@ dategrouping
 toptweets
 wordevaluation
 sentiments
+dailytweets

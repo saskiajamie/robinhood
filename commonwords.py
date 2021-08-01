@@ -18,17 +18,18 @@ for txt in df.iterrows():
     x += txt[1]['cleantext'].split(' ')
 #Top Common Words
 topwords = Counter(x).most_common()
-topwords[:5]
+topwords[:15]
 
 #Visualizing the Common Words
-top = topwords[:10]
+top = topwords[:15]
 top.reverse()
 x , y = zip(*(top))
 
-plt.figure(figsize=(14, 10))
+plt.figure(figsize=(12, 8))
 plt.bar(x, y)
 
 plt.title("Common Words Tweets mentioning Robinhood")
 plt.xlabel('Ocurrences')
 plt.ylabel('Words')
+plt.xticks(rotation=40)
 plt.show()
