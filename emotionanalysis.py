@@ -7,7 +7,7 @@ from nrclex import NRCLex
 #Open file cleaneddate from data
 df = pd.read_csv ('./data/cleaneddate.csv', index_col=None, header=0)
 df.append(df)
-strdf = df['text']
+strdf = df['text'].to_string()
 
 # 3 Möglichkeiten für string funktionieren nicht Fehlermeldung: must be a string, not <class 'pandas.core.series.Series'>
 # strdf = df['text'].astype(str)
