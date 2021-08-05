@@ -5,7 +5,7 @@ plt.style.use('ggplot')
 # Boxplot Tweet length
 
 #Open file
-df = pd.read_csv ('./0_results_robinhood.csv', index_col=None, header=0)
+df = pd.read_csv ('./data/0_results_robinhood.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 

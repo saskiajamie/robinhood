@@ -8,7 +8,7 @@ plt.style.use('ggplot')
 import seaborn as sns
 
 #Open file
-df = pd.read_csv ('./cleaneddate.csv', index_col=None, header=0)
+df = pd.read_csv ('./data/cleaneddate.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 

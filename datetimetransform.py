@@ -3,7 +3,7 @@
 import pandas as pd
 
 #Open file
-df = pd.read_csv ('./0_results_robinhood.csv', index_col=None, header=0)
+df = pd.read_csv ('./data/0_results_robinhood.csv', index_col=None, header=0)
 df.append(df)
 df.head()
 df.shape
@@ -24,4 +24,4 @@ reviews.head()
 
 
 
-df.to_csv('./cleaneddate.csv')
+df.to_csv('./data/cleaneddate.csv')
