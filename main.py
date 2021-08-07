@@ -10,7 +10,7 @@ import toptweets
 import wordevaluation
 import sentiments
 import dailytweets
-import emotionanalysis
+
 
 tweetlength
 datetimetransform
@@ -21,4 +21,3 @@ toptweets
 wordevaluation
 sentiments
 dailytweets
-emotionanalysis
